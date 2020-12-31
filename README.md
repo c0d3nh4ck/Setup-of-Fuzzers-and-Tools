@@ -1,7 +1,7 @@
 ## Setup, Installation and Working
 
 
-#### Nautilus-Fuzz
+### Nautilus-Fuzz
 
 > Nautilus is a coverage guided, grammar based fuzzer. It improves the test coverage by specifying the grammar of semi valid inputs.
 
@@ -38,7 +38,7 @@ like in PDF parsers, Browsers, and in other programs where they require a more s
 
 
 
-#### Qiling
+### Qiling
 
 > Qiling is an advanced binary emulation framework which is used as sandbox to different kind of architectures and Operating Systems.
 
@@ -82,7 +82,7 @@ It also allow hooking at various levels like syscalls, assembly instructions, IO
 
 
 
-#### Fuzzbench
+### Fuzzbench
 
 > It is a free service that evaluates fuzzers on a wide variety of real-world benchmarks
 
