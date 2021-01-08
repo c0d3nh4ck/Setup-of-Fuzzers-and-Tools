@@ -43,4 +43,4 @@ Then create a python script containing information about benchmarks i.e. binary 
 We can optionally add attributes related to seeds, dictionaries, etc.
 
 5. Then, it will generate a html file type report with all the data and statistics related to the fuzzer and the benchmark
-in the output directory specified by configuartion yaml file.
+in the output directory specified by configuartion yaml file
