@@ -37,7 +37,7 @@ In the fuzzer directory, we need to create 3 files i.e. builder.Dockerfile , run
 
    Now run `make build-$FUZZER_NAME-$BENCHMARK_NAME` where BENCHMARK_NAME is the environment variable containing name of the binary.
 
-4. To run a local experiment follow this [link](https://google.github.io/fuzzbench/running-a-local-experiment) 
+4. To run a local experiment follow this [link](https://google.github.io/fuzzbench/running-a-local-experiment)
 We need to create an experiment configuration yaml file which contains information about docker registry, output directory, number of trials.
 Then create a python script containing information about benchmarks i.e. binary to be fuzzed , fuzzers to compare , config yaml file.
 We can optionally add attributes related to seeds, dictionaries, etc.
