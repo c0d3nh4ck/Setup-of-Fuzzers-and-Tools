@@ -23,11 +23,12 @@
     sudo ./deps.sh
     ```
 
-3. We can check the fuzzing directory in the Qiling repository as an example on how to use it.\
-First, we need to make a python script which contain information about which program to fuzz with its architecture & root filesystem path mentioned to emulate the environment using Quiling.\
+3. We can check the fuzzing directory in the Qiling repository as an example on how to use it.
+First, we need to make a python script which contain information about which program to fuzz with its architecture & root filesystem path mentioned to emulate the environment using Quiling.
 Then, we can specify the address or buffer stream where we want to pass the input and fuzz it.
 
-4. Run this command to start AFL++ in unicorn mode `afl-fuzz -i ./afl_inputs -o ./afl_outputs -m none -U -- python3 ./fuzz_script.py @@`
+4. Run this command to start AFL++ in unicorn mode\
+   `afl-fuzz -i ./afl_inputs -o ./afl_outputs -m none -U -- python3 ./fuzz_script.py @@`
 
 5. We can also create **snapshot** of a binary file in Quiling at the time it was running.
 And, then use that snapshot later on for fuzzing by changing the buffers at some addresses.
