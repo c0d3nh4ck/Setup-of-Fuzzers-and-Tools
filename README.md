@@ -30,7 +30,7 @@ afl-fuzz -S afl -i /tmp/seeds -o /tmp/workdir/ ./test @@
 #Terminal/Screen 2
 cargo run --release -- -o /tmp/workdir -- ./test @@
 ```
-7. Nautilus-Fuzz works better in cases where it requires the input to be based on a more grammatical based context 
+7. Nautilus-Fuzz only works better in cases where it requires the input to be based on a more grammatical based context 
 like in PDF parsers, Browsers, and in other programs where they require a more structured input rather than just random characters. 
 
 8. Otherwise, AFL++ dictionary module works far better as it provides better path coverage than Nautilus-Fuzz.
