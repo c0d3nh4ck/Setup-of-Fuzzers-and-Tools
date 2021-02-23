@@ -8,13 +8,13 @@
 
     ```bash
     docker pull angr/angr
-    docker run angr/angr
+    docker run --name angr -it angr/angr
     ```
 
 2. You might need to install additional packages via apt. But it has no sudo command as it is uses the vanilla version of ubuntu. So, you cannot escalate privilege to install additional packages. Thus, you can follow the below steps :-
 
     ```bash
-    docker exec -it -u root angr/angr bash
+    docker exec -it -u root angr bash
     apt install sudo
     usermod -aG sudo angr   # This will grant root privilege to the user "angr"
     ```
@@ -22,9 +22,15 @@
 3. And then, to access the container use the command below. The main benefit with docker container is that we don't need to install other tools which are as an extension to angr.
 
     ```bash
-    docker exec -it -u angr angr/angr bash
+    docker exec -it -u angr angr bash
     ```
+    
+4. If you just want to run angr for one-time purpose use the command below.
 
+    ```bash
+    docker run --rm -it angr/angr
+    ```
+    
 ## Parts of Angr-Framework
 
 ### The Loader
